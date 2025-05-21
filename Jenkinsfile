@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Run Docker Container') {
             steps {
-                sh 'docker run -d  test-container jenkin1'
+                sh 'docker run -d --name test-container jenkin1'
             }
         }
     }
